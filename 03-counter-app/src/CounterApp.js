@@ -1,16 +1,18 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const CounterApp = ( { value } ) => {
+    
+    const [ counter, setCounter ] = useState(0);
 
     const handleAdd = () => {
-        console.log('+1');
+        setCounter(counter + 1);
     };
 
     return (
     <Fragment>
         <h1>Counter App</h1>
-        <h2>{ value }</h2>
+        <h2>{ counter }</h2>
         <button onClick={ handleAdd }>+1</button>
     </Fragment>);
 }
