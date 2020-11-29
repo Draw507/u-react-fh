@@ -27,7 +27,6 @@ describe('Pruebas en PrimeraApp', () => {
 
         expect(textoParrafo).toBe(subtitulo);
         
-    })
-    
+    });
     
 })
