@@ -13,7 +13,7 @@ export const AddCategory = ({ setCategories }) => {
 
         console.log('handleSubmit');
 
-        setCategories(cats => [...cats, inputValue]);
+        setCategories(cats => [inputValue, ...cats]);
         setInputValue('');
     };
 
